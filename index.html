@@ -33,73 +33,77 @@
         <h3 class="box-title"> 1. Quand on clique sur le bouton "=" on affiche le résultat de la somme des 2 inputs dans le span #response.</h3>
       </div>
       <!-- /.box-header -->
+      <!-- CLACUL1 -->
 
       <div class="box-body">
-        <input type="text" class="form-control">
+        <input id="nb1A" type="text" class="form-control">
         <span>
           <i class="fas fa-plus"></i>
         </span>
-        <input type="text" class="form-control">
-        <button class="btn">
+        <input id="nb2A" type="text" class="form-control">
+        <button id="equal1" class="btn">
           <i class="fas fa-equals"></i>
         </button>
         <span id="response1" class="ml-2">?</span>
       </div>
       <!-- /.box-body -->
     </div>
+    <!-- CALCUL2 -->
     <div id="exo-2" class="box box-info">
       <div class="box-header with-border">
         <h3 class="box-title">2. même chose que l'exo 1, on doit pouvoir calculer les inputs mais cette fois on peut choisir l'opérateur.</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
-        <input type="text" class="form-control">
-        <select name="operator" class="btn">
+        <input id="nb1B" type="text" class="form-control">
+        <select id="selectB" name="operator" class="btn">
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="*">*</option>
           <option value="/">/</option>
         </select>
-        <input type="text" class="form-control">
-        <button class="btn">
+        <input id="nb2B" type="text" class="form-control">
+        <button id="equalB" class="btn">
           <i class="fas fa-equals"></i>
         </button>
         <span id="response2" class="ml-2">?</span>
       </div>
       <!-- /.box-body -->
     </div>
+    <!-- CALCUL3 -->
     <div id="exo-3" class="box box-info">
       <div class="box-header with-border">
         <h3 class="box-title">3. Même chose qu'au dessus mais on change les opérateurs en clickant sur les boutons.</h3>
       </div>
       <!-- /.box-header -->
       <div id="operatorsExo3" class="box-body">
-        <input type="text" class="form-control">
-        <span>
+        <input id="nb1C" type="text" class="form-control">
+        <span id="opeSpanC">
           <i class="fas fa-plus"></i>
         </span>
-        <input type="text" class="form-control">
-        <button class="btn">
+        <input id="nb2C" type="text" class="form-control">
+        <button id="equalC" class="btn">
           <i class="fas fa-equals"></i>
         </button>
         <span id="response3" class="ml-2">?</span>
         <br>
-        <button class="m-1 btn">
+        <button id="+" class="m-1 btn">
           <i class="fas fa-plus"></i>
         </button>
-        <button class="m-1 btn">
+        <button id="-" class="m-1 btn">
           <i class="fas fa-minus"></i>
         </button>
         <br>
-        <button class="m-1 btn">
+        <button id="*" class="m-1 btn">
           <i class="fas fa-times"></i>
         </button>
-        <button class="m-1 btn">
+        <button id="/" class="m-1 btn">
           <i class="fas fa-divide"></i>
         </button>
       </div>
       <!-- /.box-body -->
     </div>
+    <!-- CALCUL4 -->
     <div id="exo-4" class="box box-info">
       <div class="box-header with-border">
         <h3 class="box-title">4. Faire une calculatrice complète (boutons pour les nombres et pour les opérateurs) En gardant le principe de 2
@@ -108,12 +112,12 @@
       <!-- /.box-header -->
       <!-- box-body -->
       <div class="box-body">
-        <input type="text" class="form-control">
-        <span>
+        <input id="nb1D" type="text" class="form-control">
+        <span id="opeSpanD">
           <i class="fas fa-plus"></i>
         </span>
-        <input type="text" class="form-control">
-        <button class="btn">
+        <input id="nb2D" type="text" class="form-control">
+        <button id="equalD" class="btn">
           <i class="fas fa-equals"></i>
         </button>
         <span id="response4" class="ml-2">?</span>
@@ -154,16 +158,16 @@
         </div>
 
         <div id="operatorsExo4">
-          <button class="m-1 btn">
+          <button value="+" class="m-1 btn">
             <i class="fas fa-plus"></i>
           </button>
-          <button class="m-1 btn">
+          <button value="-" class="m-1 btn">
             <i class="fas fa-minus"></i>
           </button>
-          <button class="m-1 btn">
+          <button value="*" class="m-1 btn">
             <i class="fas fa-times"></i>
           </button>
-          <button class="m-1 btn">
+          <button value="/" class="m-1 btn">
             <i class="fas fa-divide"></i>
           </button>
         </div>
